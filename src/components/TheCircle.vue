@@ -36,7 +36,10 @@ const {height, width} = useSvgSize(sizeRef);
 <template>
   <div>
     <h3>Your Circle</h3>
-    <h4>CX: {{ cx }} | CY: {{ cy }} | R: {{ r }} | Width: {{ width }} | Height: {{ height }}</h4>
+    <h4>CX: {{ cx }} | CY: {{ cy }} | R: {{ r }} | Size: {{size}}</h4>
+    <h4>Circle Style: {{circleStyle}}</h4>
+    <h4>Width: {{width}}</h4>
+    <h4>Height: {{height}}</h4>
   </div>
 
   <div class="circle-container">
