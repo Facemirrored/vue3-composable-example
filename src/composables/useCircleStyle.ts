@@ -6,7 +6,8 @@ const useCircleStyle = ({cxRef, cyRef, rRef}: {
     rRef: Ref<number>,
 }) => {
 
-    // TODO: if i use unref or extract value as const, the reactivity is lost
+    // TODO: if I use unref or extract value as const, the reactivity is lost
+    // --> can I extract the values directly to shorten the access and make the code more comprehensive?
     const circleStyle = computed(() => {
         return `
             cx: ${cxRef.value}px;
